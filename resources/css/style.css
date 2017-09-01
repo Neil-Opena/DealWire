@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*Navbar*/
+.navbar{
+    margin-bottom:0;
+}
+
+/*Hero*/
+#hero{
+    background:url('../img/hero.jpg') center;
+    background-size:cover;
+    height:60vh;
+}
+
+.hero-text{
+    text-align:center;
+    margin-top:20px;
+    margin-bottom:20px;
+}
