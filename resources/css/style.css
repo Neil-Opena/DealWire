@@ -44,6 +44,10 @@ section{
     padding:50px;
 }
 
+li{
+    list-style: none;
+}
+
 .btn-active:link,
 .btn-active:visited{
     background:#9b59b6;
@@ -98,6 +102,10 @@ section{
     color:#fff;
 }
 
+#hero span{
+    color:#9b59b6;
+}
+
 /*About*/
 #about{
     text-align:center;
@@ -112,4 +120,82 @@ section{
 /*Featured Deals*/
 #deals{
     background:#e7e7e7;
+}
+
+#deals .name:link,
+#deals .name:visited{
+    color:#9b59b6;
+    font-weight:bold;
+}
+
+#deals li:before{
+    content: "- ";
+    color:#9b59b6;
+}
+
+.feature-img{
+    margin-top:50px;
+    height:250px;
+    overflow:auto;
+    float:right;
+}
+
+.feature-deal{
+    border:1px solid #9b59b6;
+}
+
+.deal{
+    background:#fff;
+    box-shadow:1px 1px 5px #aaa;
+    padding:0;
+}
+
+.btn-learn{
+    background:#9b59b6;
+    color:#fff;
+}
+
+.deal-thirds{
+    width:31.33333333%;
+    float:left;
+    margin:0 3% 40px 0;
+    height:480px;
+    position: relative;
+}
+
+.deal-thirds:nth-child(3n){
+    margin-right:0;
+}
+
+.img-responsive1{
+    width:100%;
+    height:auto;
+    max-height:200px;
+}
+
+a.deal{
+    text-decoration: none;
+    color:#000;
+    border: 2px solid #fff;
+    font-size:80%;
+}
+
+a.deal:hover{
+    border: 2px solid #9b59b6;
+    transition: all 0.3s;
+}
+
+.deal-title{
+    text-align:center;
+    background:#9b59b6;
+    color:#fff;
+    font-weight:700;
+    margin:0;
+    padding:15px;
+}
+
+.deal-description{
+    padding:5px;
+    position:absolute;
+    top:250px;
 }
