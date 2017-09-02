@@ -142,12 +142,12 @@ li{
 
 .feature-deal{
     border:1px solid #9b59b6;
+    padding:15px;
 }
 
 .deal{
     background:#fff;
     box-shadow:1px 1px 5px #aaa;
-    padding:0;
 }
 
 .btn-learn{
@@ -189,7 +189,7 @@ a.deal:hover{
     text-align:center;
     background:#9b59b6;
     color:#fff;
-    font-weight:700;
+    text-transform: uppercase;
     margin:0;
     padding:15px;
 }
