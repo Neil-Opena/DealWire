@@ -159,7 +159,7 @@ li{
     width:31.33333333%;
     float:left;
     margin:0 3% 40px 0;
-    height:480px;
+    height:420px;
     position: relative;
 }
 
@@ -189,13 +189,37 @@ a.deal:hover{
     text-align:center;
     background:#9b59b6;
     color:#fff;
-    text-transform: uppercase;
     margin:0;
-    padding:15px;
+    padding:10px;
 }
 
-.deal-description{
+.deal-container{
     padding:5px;
     position:absolute;
     top:250px;
+}
+
+.description{
+    line-height:17px;
+    letter-spacing: 1px;
+    word-spacing:4px;
+    font-size: 90%;
+}
+
+.sector{
+    color:#aaa;
+    margin:0;
+    font-size:90%;
+    text-transform: uppercase;
+}
+
+.ellipses{
+    color:#9b59b6;
+    font-weight: bold;
+    font-size: 130%;
+}
+
+.time{
+    color:#9b59b6;
+    font-weight: bold;
 }
