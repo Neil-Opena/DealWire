@@ -156,7 +156,7 @@ a .deal{
 
 a .deal:hover{
     border:2px solid #9b59b6;
-    transition: all 0.3s;
+    transition: all 0.2s;
 }
 
 .deal-img{
@@ -185,6 +185,10 @@ a .deal:hover{
     padding:4px;
 }
 
+.deal-content h4{
+    font-weight: bold;
+}
+
 .truncate{
     font-size:90%;
 }
@@ -194,5 +198,32 @@ a .deal:hover{
     height:25px;
     font-size:75%;
     margin-top:10px;
-    padding:4px;
+    padding:5px;
+    margin-bottom:5px;
+}
+
+/*Services*/
+#services-section{
+    padding:0;
+    background: white url('../img/business.jpg') no-repeat;
+    background-size: cover;
+}
+
+#services-section h2{
+    padding-top: 50px;
+}
+
+.white-layer{
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(200,200,200,0.7)), to(rgba(200,200,200,0.7)));
+    background-image: linear-gradient(rgba(200,200,200,0.6), rgba(200,200,200,0.6));
+}
+
+#services-section h4{
+    font-weight:bold;
+    letter-spacing: 1px;
+    text-align:center;
+}
+
+.service-symbol{
+    text-align:center;
 }
