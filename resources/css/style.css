@@ -215,7 +215,7 @@ a .deal:hover{
 
 .white-layer{
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(200,200,200,0.7)), to(rgba(200,200,200,0.7)));
-    background-image: linear-gradient(rgba(200,200,200,0.6), rgba(200,200,200,0.6));
+    background-image: linear-gradient(rgba(200,200,200,0.7), rgba(200,200,200,0.7));
 }
 
 #services-section h4{
@@ -224,6 +224,47 @@ a .deal:hover{
     text-align:center;
 }
 
+#services-section a{
+    margin:0 auto;
+}
+
 .service-symbol{
+    color:#333;
+    margin:0 auto;
     text-align:center;
+    background-color:rgba(155, 89, 182, 0.4);
+    padding:20px;
+    margin:10px;
+    border:1px solid #333;
+}
+
+/*Contact Us*/
+#contact{
+    padding:0;
+}
+
+#contact .white-layer{
+    padding:50px;
+}
+
+#test{
+    height: 400px;
+    width:100%;
+}
+
+.form-container{
+    z-index:99;
+    position: absolute;
+}
+
+/*Footer*/
+footer{
+    background:#333;
+    margin:0;
+    padding:20px;
+    color:#fff;
+}
+
+input{
+    width: 100%;
 }
