@@ -115,6 +115,9 @@ li{
     text-align:justify;
 }
 
+#about img{
+    max-height:33vh;
+}
 
 /*Featured Deals*/
 #deals{
@@ -281,6 +284,14 @@ a .deal:hover{
     text-align:center;
 }
 
+#register p{
+    padding-bottom:10px;
+}
+
+.register-justify{
+    text-align:justify;
+}
+
 /*Contact Us*/
 #contact{
     padding:0;
@@ -291,13 +302,30 @@ a .deal:hover{
 }
 
 #test{
-    height: 400px;
+    height: 600px;
     width:100%;
 }
 
 .form-container{
     z-index:99;
     position: absolute;
+    height: 600px;
+}
+
+
+
+input,
+textarea{
+    margin-bottom:20px;
+}
+
+textarea{
+    width: 100%;
+}
+
+input[type="submit"]{
+    background:#9b59b6;
+    color:#fff;
 }
 
 /*Footer*/
