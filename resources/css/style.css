@@ -52,7 +52,6 @@ li{
 .btn-active:visited{
     background:#9b59b6;
     color:#fff;
-    border-radius:20px;
     font-weight:bold;
 }
 
@@ -64,7 +63,7 @@ li{
 }
 
 .btn-lg{
-    padding:15px;
+    padding:7px 32px;
     letter-spacing: 3px;
 }
 
@@ -210,6 +209,8 @@ a .deal:hover{
     background: white url('../img/business.jpg') no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    border-top:3px solid rgba(155, 89, 182, 0.8);
+    border-bottom:3px solid rgba(155, 89, 182, 0.8);
 }
 
 #services-section h2{
@@ -244,6 +245,40 @@ a .deal:hover{
     border-radius:50%;
     padding:5%;
     border:2px solid #000;
+}
+
+/*Event*/
+.event-img{
+    max-height: 50vh;
+}
+
+.event-content{
+    text-align:left;
+}
+
+.event-summary{
+    margin:20px 0;
+    font-size:90%;
+}
+
+#event .btn{
+    background:#ddd;
+    color:inherit;
+}
+
+#event .btn:hover{
+    background:#bbb;
+}
+
+/*Register Now*/
+#register{
+    padding:0;
+    background:#e7e7e7;
+}
+
+.register-content{
+    padding:50px 5%;
+    text-align:center;
 }
 
 /*Contact Us*/
