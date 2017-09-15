@@ -198,7 +198,7 @@ a .deal:hover{
     font-size:75%;
     margin-top:10px;
     padding:5px;
-    padding-bottom:5px;
+    padding-bottom:25px;
     color:#fff;
     background-color:rgba(155, 89, 182, 0.8);
 }
@@ -217,8 +217,8 @@ a .deal:hover{
 }
 
 .white-layer{
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(200,200,200,0.7)), to(rgba(200,200,200,0.7)));
-    background-image: linear-gradient(rgba(200,200,200,0.7), rgba(200,200,200,0.7));
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(200,200,200,0.8)), to(rgba(200,200,200,0.8)));
+    background-image: linear-gradient(rgba(200,200,200,0.8), rgba(200,200,200,0.8));
 }
 
 #services-section h4{
@@ -231,14 +231,19 @@ a .deal:hover{
     margin:0 auto;
 }
 
-.service-symbol{
+.service{
     color:#333;
     margin:0 auto;
     text-align:center;
-    background-color:rgba(155, 89, 182, 0.8);
     padding:20px;
     margin:10px;
-    border:1px solid #333;
+}
+
+.service-symbol{
+    background:rgba(155, 89, 182, 0.8);
+    border-radius:50%;
+    padding:5%;
+    border:2px solid #000;
 }
 
 /*Contact Us*/
