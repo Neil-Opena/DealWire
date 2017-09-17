@@ -302,30 +302,34 @@ a .deal:hover{
 }
 
 #test{
-    height: 600px;
+    height: 650px;
     width:100%;
 }
 
 .form-container{
     z-index:99;
     position: absolute;
-    height: 600px;
+    height: 650px;
 }
 
-
+form{
+    padding:20px 0;
+}
 
 input,
 textarea{
     margin-bottom:20px;
-}
-
-textarea{
-    width: 100%;
+    width:100%
 }
 
 input[type="submit"]{
     background:#9b59b6;
     color:#fff;
+}
+
+.number{
+    color:#9b59b6;
+    font-weight:bold;
 }
 
 /*Footer*/
@@ -334,8 +338,21 @@ footer{
     margin:0;
     padding:20px;
     color:#fff;
+    text-align: center;
+    font-size:70%;
 }
 
-input{
-    width: 100%;
+footer li{
+    display:inline-block;
+    padding:5px 10px;
+}
+
+footer a:visited,
+footer a:link{
+    color:#fff;
+}
+
+footer a:hover,
+footer a:active{
+    color:#e7e7e7;
 }
