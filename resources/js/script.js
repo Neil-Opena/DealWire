@@ -33,3 +33,19 @@ $(function(){
         });
     });
 });
+
+$(document).ready(function(){
+    $(window).scroll(function(){
+        $('.deal').each(function(){
+            var imagePos = $(this).offset().top;
+
+            var topOfWindow = $(window).scrollTop();
+            if(imagePos < topOfWindow + 400){
+                $(this).css("visibility","visible");
+                $(this).css("animation-duration","0.5s");
+                $(this).addClass("animated slideInUp");
+            }
+        });
+    });
+
+});
