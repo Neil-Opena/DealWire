@@ -82,29 +82,39 @@ li{
 /*Hero*/
 #hero{
    /* background: gray url('../img/hero.jpg') top left;*/
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.7)), to(rgba(0,0,0,0.7))),url('../img/hero.jpg');
-    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url('../img/hero.jpg');
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0.8)), to(rgba(0,0,0,0.4))),url('../img/hero.jpg');
+    background-image: linear-gradient(rgba(255,255,255,0.8), rgba(0,0,0,0.4)),url('../img/hero.jpg');
     background-size:cover;
     height:500px;
     background-attachment: fixed;
     text-align:center;
-    color:#fff;
-    text-shadow: 0 5px 5px #111;
+    color:inherit;
+    text-shadow: 0 1px 2px #111;
 }
 
 #hero p{
     word-spacing:7px;
     letter-spacing: 5px;
+    font-size:110%;
 }
 
 .hero-text{
     padding-top:100px;
     padding-bottom:50px;
     color:#fff;
+    font-family:sans-serif;
+    text-transform:uppercase;
+    letter-spacing: 1px;
+    font-weight:100;
+    font-size:500%;
 }
 
-#hero span{
+#hero .blue1{
     color:rgba(94,135,167,1);
+}
+
+#hero .blue2{
+    color: rgba(14,45,74,1);
 }
 
 /*About*/
