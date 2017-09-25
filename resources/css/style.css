@@ -225,7 +225,7 @@ a .deal:hover{
     padding:0;
     background: white url('../img/business.jpg') no-repeat;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: 1500px;
     border-top:3px solid rgba(14,45,74,0.8);
     border-bottom:3px solid rgba(14,45,74,0.8);
 }
