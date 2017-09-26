@@ -36,6 +36,7 @@ $(function(){
 
 $(document).ready(function(){
     $(window).scroll(function(){
+        /*
         $('.deal').each(function(){
             var imagePos = $(this).offset().top;
 
@@ -45,7 +46,7 @@ $(document).ready(function(){
                 $(this).css("animation-duration","0.5s");
                 $(this).addClass("animated slideInUp");
             }
-        });
+        }); */
     });
 
 });
