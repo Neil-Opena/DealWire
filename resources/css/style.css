@@ -60,7 +60,7 @@ li{
 .btn-active:hover,
 .btn-active:active{
     color:#fff;
-    background:#6c3981;
+    background:rgba(14,45,74,1);
     transition: all 0.2s;
 }
 
@@ -331,7 +331,6 @@ form{
 
 input,
 textarea{
-    margin-bottom:20px;
     width:100%
 }
 
