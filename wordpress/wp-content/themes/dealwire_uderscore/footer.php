@@ -13,22 +13,27 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'dealwire' ) ); ?>"><?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'dealwire' ), 'WordPress' );
-			?></a>
-			<span class="sep"> | </span>
-			<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'dealwire' ), 'dealwire', '<a href="http://neil-opena.com/">Neil Opena</a>' );
-			?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
 </div><!-- #page -->
+<footer>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Deals</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Forums</a></li>
+            <li><a href="#">Account</a></li>
+        </ul>
+    </nav>
+    <p>Copyright &copy; 2017 &mdash; DealWire.co</p>
+</footer>
+
 
 <?php wp_footer(); ?>
-
+<script src="<?php bloginfo('template_directory') ?>/vendors/js/jquery-3.2.1.min.js"></script>
+<script src="<?php bloginfo('template_directory') ?>/vendors/js/bootstrap.min.js"></script>
+<script src="<?php bloginfo('template_directory') ?>/resources/js/script.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRqPv86iUa_FOseGUremm9ZpgBE1mLAW4&callback=initMap">
+</script>
 </body>
 </html>
