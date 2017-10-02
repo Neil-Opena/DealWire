@@ -15,16 +15,12 @@
 
 </div><!-- #page -->
 <footer>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Deals</a></li>
-            <li><a href="#">Events</a></li>
-            <li><a href="#">Forums</a></li>
-            <li><a href="#">Account</a></li>
-        </ul>
-    </nav>
+    <?php
+        wp_nav_menu( array(
+            'theme_location' => 'menu-1',
+            'container' => 'nav'
+        ));
+     ?>
     <p>Copyright &copy; 2017 &mdash; DealWire.co</p>
 </footer>
 
