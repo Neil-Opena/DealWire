@@ -3,7 +3,7 @@
 Template Name: Project Grid (Page)
 */
 ?>
-<?php 
+<?php
 	global $post;
 	$settings = get_option('fivehundred_theme_settings');
 	$display_count = $settings['home_projects'];
@@ -18,7 +18,7 @@ Template Name: Project Grid (Page)
 		$show_more = 0;
 	}
 	$url = site_url('/');
-	$tagline = get_bloginfo('description'); 
+	$tagline = get_bloginfo('description');
 	if ($social_settings) {
 		$twitter = (isset($social_settings['twitter']) ? $social_settings['twitter'] : '');
 		$fb = (isset($social_settings['fb']) ? $social_settings['fb'] : '');
@@ -53,7 +53,7 @@ Template Name: Project Grid (Page)
 			<?php get_template_part( 'nav', 'above-grid' ); ?>
 			<?php do_action('fh_above_grid'); ?>
 			<div id="project-grid">
-					<?php get_template_part('loop', 'project'); ?>				
+					<?php get_template_part('loop', 'project'); ?>
 			</div>
 			<?php do_action('fh_below_grid'); ?>
 			<div style="clear: both;"></div>

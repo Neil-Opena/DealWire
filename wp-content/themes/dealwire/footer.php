@@ -37,9 +37,9 @@
                 </ul>
 	</nav>
 </footer>
-<script src="<?php bloginfo('template_directory') ?>vendors/js/jquery-3.2.1.min.js"></script>
-<script src="<?php bloginfo('template_directory') ?>vendors/js/bootstrap.min.js"></script>
-<script src="<?php bloginfo('template_directory') ?>resources/js/script.js"></script>
+<script src="<?php bloginfo('template_directory') ?>/vendors/js/jquery-3.2.1.min.js"></script>
+<script src="<?php bloginfo('template_directory') ?>/vendors/js/bootstrap.min.js"></script>
+<script src="<?php bloginfo('template_directory') ?>/resources/js/script.js"></script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRqPv86iUa_FOseGUremm9ZpgBE1mLAW4&callback=initMap">
 </script>
 <?php wp_footer(); ?>
