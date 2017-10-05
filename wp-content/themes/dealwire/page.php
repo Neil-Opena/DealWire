@@ -1,10 +1,8 @@
 <?php get_header(); ?>
 <div id="container">
-
-	<div class="breakout-out page-title">
-		<div class="breakout-in"><h2><?php the_title(); ?></h2></div>
+	<div id="site-description">
+		<h1><?php the_title(); ?></h1>
 	</div>
-
 
 	<article id="content">
 		<?php the_post(); ?>

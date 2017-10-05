@@ -3,9 +3,6 @@
 if (isset($_GET['project_filter'])) {
 	$filter = $_GET['project_filter'];
 }
-else {
-	$filter = 'date';
-}
 if (isset($_GET['order'])) {
 	$order = $_GET['order'];
 }
@@ -14,42 +11,26 @@ else {
 }
 ?>
 <div class="ignitiondeck grid-header">
-
 	<ul class="filter-menu" data-order="<?php echo $order; ?>">
-
-		<li class="filter_choice">
-			<a href="?project_filter=date<?php echo ($order == 'ASC' ? '&amp;order=DESC' : '&amp;order=ASC'); ?>" class="<?php echo (isset($filter) && $filter == 'date' ? 'active' : ''); ?>">
-				<?php echo ( $order == 'DESC' ? __('Sort By: Date', 'fivehundred') : __('Sort By: Date', 'fivehundred') ); ?>
-				<i class="icon-reveal-menu"></i>
-			</a>
-		</li>
-		
+		<li><strong><?php _e('Sort By', 'fivehundred'); ?>:</strong></li>
+		<li class="filter_choice"><a href="?project_filter=date<?php echo ($order == 'ASC' ? '&amp;order=DESC' : '&amp;order=ASC'); ?>" class="<?php echo (isset($filter) && $filter == 'date' ? 'active' : ''); ?>"><?php echo ($order == 'DESC' ? __('Oldest', 'fivehundred') : __('Newest', 'fivehundred')); ?></a></li>
 		<li class="filter_choice"><a href="?project_filter=ign_fund_raised<?php echo ($order == 'ASC' ? '&amp;order=DESC' : '&amp;order=ASC'); ?>" class="<?php echo (isset($filter) && $filter == 'ign_fund_raised' ? 'active' : ''); ?>"><?php _e('Amount Raised', 'fivehundred'); ?></a></li>
-		
 		<li class="filter_choice"><a href="?project_filter=ign_days_left<?php echo ($order == 'ASC' ? '&amp;order=DESC' : '&amp;order=ASC'); ?>" class="<?php echo (isset($filter) && $filter == 'ign_days_left' ? 'active' : ''); ?>"><?php _e('Days Left', 'fivehundred'); ?></a></li>
-		
 		<li class="filter_choice"><a href="?project_filter=ign_fund_goal<?php echo ($order == 'ASC' ? '&amp;order=DESC' : '&amp;order=ASC'); ?>" class="<?php echo (isset($filter) && $filter == 'ign_fund_goal' ? 'active' : ''); ?>"><?php _e('Goal Amount', 'fivehundred'); ?></a></li>
-		
-	</ul>
-	<div class="swap" data-order="<?php echo $order; ?>">
-		<a href="<?php echo ($order == 'ASC' ? '?project_filter='.$filter.'&amp;order=DESC' : '?project_filter='.$filter.'&amp;order=ASC'); ?>">
-			<i class="icon-arrow-up"></i>
-		</a>
-		<i class="icon-arrow-down"></i>
-	</div>
-</div>
-
-<ul class="cat-sort">
-	<?php 
+		<?php 
 		$args = array('type' => 'ignition_project', 'hide_empty' => 1, 'taxonomy' => 'project_category');
 		$cats = get_categories($args);
-		
 		if (!empty($cats)) { ?>
-			<a href="?id_category="><?php _e('All Categories', 'fivehundred'); ?></a>
-					<?php
-						foreach ($cats as $cat) {
-							echo '<a href="?id_category='.$cat->slug.'">'.$cat->name.'</a>';
-						}
-					?>
-	<?php } ?>
-</ul>
+		<li class="filter_submenu"><span><?php _e('Category', 'fivehundred'); ?></span>
+			<ul class="filter-dd">
+				<li class="filter_choice"><a href="?id_category="><?php _e('All Categories', 'fivehundred'); ?></a></li>
+				<?php
+				foreach ($cats as $cat) {
+					echo '<li class="filter_choice"><a href="?id_category='.$cat->slug.'">'.$cat->name.'</a></li>';
+				}
+				?>
+			</ul>
+		</li>
+		<?php } ?>
+	</ul>
+</div>

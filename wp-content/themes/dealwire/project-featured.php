@@ -5,8 +5,6 @@
 		$featured_proj = $options['project_id'];
 		$featured_post = $options['post_id'];
 		$summary = the_project_summary($featured_post);
-		//$pledges_count = get_backer_total($featured_post);
-		//$tthumb = plugins_url('ignitiondeck/products/timthumb.php', 'ignitiondeck');
 	}
 	do_action('fh_hDeck_before');
 ?>
@@ -16,23 +14,21 @@
 	</a>
 	<div class="featured-info">
 		<div class="featured-border">
-			<header class="hDeck-head">
-				<div class="featured-item">
-						<strong><?php _e('Goal',  'fivehundred'); ?>: </strong><span><?php echo $summary->goal; ?></span>
-				</div>
-			</header>
 			<h3><?php echo $summary->name; ?></h3>
 			<p><?php echo $summary->short_description ;?></p>
 			<div class="featured-inner">
-				<div class="featured-item project-ct-dollar">
-					<?php _e('Raised',  'fivehundred'); ?> 
-					<?php echo $summary->total; ?>
+				<div class="featured-item">
+					<strong><?php _e('Goal',  'fivehundred'); ?>: </strong><span><?php echo $summary->goal; ?></span>
 				</div>
-
-				<div class="featured-item project-ct-percent">
-					<?php echo $summary->percentage; ?>%
+				<div class="featured-item">
+					<strong><?php _e('Raised',  'fivehundred'); ?>: </strong><span><?php echo $summary->total; ?></span>
 				</div>
-				
+				<div class="featured-item">
+					<strong><?php _e('Supporters',  'fivehundred'); ?>: </strong><span><?php echo $summary->pledgers; ?></span>
+				</div>
+				<div class="featured-item">
+					<strong><?php _e('Days Left',  'fivehundred'); ?>: </strong><span><?php echo $summary->days_left; ?></span>
+				</div>
 				<div class="featured-item">
 					<div class="ign-progress-wrapper" style="clear: both;">
 						<!-- end progress-percentage -->
@@ -42,25 +38,10 @@
 						<!-- end progress bar -->
 					</div>
 				</div>
-
-				<div class="featured-item project-ct-period">
-					<i class="icon-icon-time"></i> <?php echo $summary->days_left; ?> <?php _e('Days Left',  'fivehundred'); ?>
-				</div>
-
-				<div class="featured-item project-ct-support">
-					<i class="icon-torsos-all"></i> <?php echo $summary->pledgers; ?> <?php _e('Supporters',  'fivehundred'); ?>
-				</div>
 			</div>
 			<a class="featured-button" href="<?php echo get_permalink($featured_post); ?>">
-				<span><?php _e('Learn More', 'fivehundred'); ?></span><i class="icon-arrow-right"></i>
+				<span><?php _e('Learn More', 'fivehundred'); ?></span>
 			</a>
-
-			<div class="featured-button-share">
-				<i class="icon-export"></i>
-				<div id="share-popup">
-			  	<?php get_template_part('project', 'social'); ?>
-				</div>
-			</div>
 		</div>
 	</div>
 </div>

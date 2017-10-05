@@ -3,12 +3,12 @@
 Template Name: Project Grid (Page)
 */
 ?>
-<?php global $post; ?>
-<?php get_header(); ?>
 <?php 
+	global $post;
 	$settings = get_option('fivehundred_theme_settings');
-	
 	$display_count = $settings['home_projects'];
+	$social_settings = maybe_unserialize(get_option('idsocial_settings'));
+	$social_settings = $social_settings['theme_500'];
 	$num_projects = wp_count_posts('ignition_product');
 	$num_projects_pub = $num_projects->publish;
 	if ($display_count < $num_projects_pub) {
@@ -19,16 +19,16 @@ Template Name: Project Grid (Page)
 	}
 	$url = site_url('/');
 	$tagline = get_bloginfo('description'); 
-	if ($settings) {
-		$twitter = $settings['twitter'];
-		$fb = $settings['fb'];
-		$google = $settings['google'];
-		$li = $settings['li'];
-		$via = $settings['twitter_via'];
-		$fbname = $settings['fb_via'];
-		$gname = $settings['g_via'];
-		$liname = $settings['li_via'];
-		$about_us = $settings['about'];
+	if ($social_settings) {
+		$twitter = (isset($social_settings['twitter']) ? $social_settings['twitter'] : '');
+		$fb = (isset($social_settings['fb']) ? $social_settings['fb'] : '');
+		$google = (isset($social_settings['google']) ? $social_settings['google'] : '');
+		$li = (isset($social_settings['li']) ? $social_settings['li'] : '');
+		$via = (isset($social_settings['twitter_via']) ? $social_settings['twitter_via'] : '');
+		$fbname = (isset($social_settings['fb_via']) ? $social_settings['fb_via'] : '');
+		$gname = (isset($social_settings['g_via']) ? $social_settings['g_via'] : '');
+		$liname = (isset($social_settings['li_via']) ? $social_settings['li_via'] : '');
+		$about_us = (isset($social_settings['about']) ? $social_settings['about'] : '');
 	}
 	else {
 		$via = null;
@@ -41,26 +41,21 @@ Template Name: Project Grid (Page)
 		$li = null;
 		$about_us = null;
 	}
-	$options = get_option('fivehundred_featured');
 ?>
+<?php get_header(); ?>
 <div id="container">
-	<div id="site-description"></div>
-	<?php if ($options) {?>
-	<div class="breakout-out">
-		<div class="breakout-in">
-			<?php get_template_part('project-featured'); ?>
-		</div>
+	<div id="site-description">
+		<h1><?php the_title(); ?></h1>
 	</div>
-	<?php } ?>
-	<div id="post-home" <?php post_class(); ?>>
-		<div id="content">
+	<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+		<div id="content" class="fullwidth">
 		<h2 class="entry-title"><?php _e('Featured Projects', 'fivehundred'); ?></h2>
 			<?php get_template_part( 'nav', 'above-grid' ); ?>
+			<?php do_action('fh_above_grid'); ?>
 			<div id="project-grid">
-				<?php 
-					get_template_part('loop', 'project');
-				?>
+					<?php get_template_part('loop', 'project'); ?>				
 			</div>
+			<?php do_action('fh_below_grid'); ?>
 			<div style="clear: both;"></div>
 			<div  id="home-sharing">
 			<ul>
@@ -69,8 +64,15 @@ Template Name: Project Grid (Page)
 				<?php echo ($google == 1 ? '<li class="gplus-btn"><a href="https://plus.google.com/'.$gname.'" target="_blank"><span>'.__('+1', 'fivehundred').'</span></a></li>' : ''); ?>
 				<?php echo ($li == 1 ? '<li class="linkedin-btn"><a href="http://linkedin.com/in/'.$liname.'" target="_blank"><span>'.__('Connect', 'fivehundred').'</span></a></li>' : ''); ?>
 				<!-- prob want to get category here -->
-				<?php echo ($show_more ? '<li class="ign-more-projects"><a href="'.get_post_type_archive_link("ignition_product").'">'.__('More', 'fivehundred').' <span>'.__('Projects', 'fivehundred').'</span></a></li>' : ''); ?>
+				<?php echo ($show_more ? '<li class="ign-more-projects"><a href="'.get_post_type_archive_link("ignition_product").'">'. __('View All', 'fivehundred').' <span>'.__('Projects', 'fivehundred').'</span></a></li>' : ''); ?>
 			</ul>
+			</div>
+			<hr class="fancy" />
+			<div id="about-us" class="entry-content">
+				<div id="about"><?php echo $about_us; ?></div>
+			</div>
+			<div id="home-widget">
+				<?php get_sidebar('home'); ?>
 			</div>
 		</div>
 	</div>
