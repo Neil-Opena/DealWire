@@ -244,28 +244,6 @@
 		margin: 0 auto;
 	}
 
-	footer #copyright {
-		width: 80%;
-		max-width: 960px;
-		float: none;
-		margin: 0 auto;
-		padding: 10px 0 0 0;
-		border-top: none;
-		color: #fff;
-		font-family: 'PT Serif', Georgia, Times, "Times New Roman", serif;
-		font-style: italic;
-	}
-
-	footer #copyright a{
-		color: white;
-	}
-
-	.footerright {
-		float: none;
-		width: 90%;
-		max-width: 960px;
-		margin: 0 auto;
-	}
 	nav#menu-footer {
 		float: right;
 		margin-top: 10px;
@@ -2863,16 +2841,6 @@ a.comment-reply-link > span {
 			clear: both;
 		}
 
-		footer {
-			text-align: center;
-		}
-
-		nav#menu-footer {
-			float: none;
-			margin-top: 0;
-			padding-top: 10px;
-		}
-
 		.home #content {
 			width: 90%;
 			padding: 0 5%;
@@ -2880,18 +2848,6 @@ a.comment-reply-link > span {
 
 		.home h2.entry-title {
 			margin: 15px 0;
-		}
-
-		footer {
-			border: none;
-			padding: 0;
-		}
-
-		footer #copyright {
-			width: 90%;
-			margin: 0 auto;
-			padding: 20px 0;
-			border-top: none;
 		}
 
 		.home h2.entry-title {
@@ -3359,6 +3315,8 @@ footer{
     color:#fff;
     text-align: center;
     font-size:70%;
+    width:100%;
+    max-width:none;
 }
 
 footer li{

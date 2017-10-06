@@ -1,4 +1,4 @@
-<?php 
+<?php
 	$settings = get_option('fivehundred_theme_settings');
 	if (isset($settings)) {
 		$about_us = html_entity_decode($settings['about']);
@@ -6,6 +6,7 @@
 ?>
 </div>
 </div>
+<h1>hi</h1>
 <div class="constrainedwrapper">
 		<div class="constrained">
 			<div id="about-us" class="entry-content">
@@ -24,14 +25,14 @@
 	</ul>
 	<div class="footerright">
 		<nav id="menu-footer">
-		
+
 			<?php
 			if ( has_nav_menu( 'footer-menu' ) ) {
 			// Using wp_nav_menu() to display menu
-			wp_nav_menu( array( 
+			wp_nav_menu( array(
 				'menu' => 'footer-menu', // Select the menu to show by Name
 				'container' => false, // Remove the navigation container div
-				'theme_location' => 'footer-menu' 
+				'theme_location' => 'footer-menu'
 				)
 			);
 			}
@@ -45,6 +46,7 @@
 		<?php } ?>
 	</div>
 	<div class="clear"></div>
+	<h2>hi</h2>
 </footer>
 <?php wp_footer(); ?>
 </body>

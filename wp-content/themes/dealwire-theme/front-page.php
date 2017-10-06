@@ -43,7 +43,7 @@
                     <div class="row">
                         <div class="col-sm-10 col-sm-offset-1 deal">
                             <div class="deal-img">
-                                <img src="resources/img/asia_pacific.png" class="img-responsive" alt="">
+                                <img src="<?php bloginfo('stylesheet_directory') ?>/resources/img/asia_pacific.png" class="img-responsive" alt="">
                             </div>
                             <div class="deal-content">
                                 <h4>Asia Pacific Group</h4>
@@ -61,7 +61,7 @@
                     <div class="row">
                         <div class="col-sm-10 col-sm-offset-1 deal">
                             <div class="deal-img">
-                                <img src="resources/img/888_Finance.jpg" class="img-responsive" alt="">
+                                <img src="<?php bloginfo('stylesheet_directory') ?>/resources/img/888_Finance.jpg" class="img-responsive" alt="">
                             </div>
                             <div class="deal-content">
                                 <h4>Specialty Finance</h4>
@@ -79,7 +79,7 @@
                     <div class="row">
                         <div class="col-sm-10 col-sm-offset-1 deal">
                             <div class="deal-img">
-                                <img src="resources/img/chooseyourcharity2016.jpg" class="img-responsive" alt="">
+                                <img src="<?php bloginfo('stylesheet_directory') ?>/resources/img/chooseyourcharity2016.jpg" class="img-responsive" alt="">
                             </div>
                             <div class="deal-content">
                                 <h4>Online Marketplace</h4>
@@ -97,7 +97,7 @@
                     <div class="row">
                         <div class="col-sm-10 col-sm-offset-1 deal">
                             <div class="deal-img">
-                                <img src="resources/img/CraftBeerHeader.jpg" class="img-responsive" alt="">
+                                <img src="<?php bloginfo('stylesheet_directory') ?>/resources/img/CraftBeerHeader.jpg" class="img-responsive" alt="">
                             </div>
                             <div class="deal-content">
                                 <h4>Bewery &amp; Beverage Maker</h4>
@@ -115,7 +115,7 @@
                     <div class="row">
                         <div class="col-sm-10 col-sm-offset-1 deal">
                             <div class="deal-img">
-                                <img src="resources/img/IMT_meddevices.jpg" class="img-responsive" alt="">
+                                <img src="<?php bloginfo('stylesheet_directory') ?>/resources/img/IMT_meddevices.jpg" class="img-responsive" alt="">
                             </div>
                             <div class="deal-content">
                                 <h4>Infrared Medical Technology</h4>
@@ -133,7 +133,7 @@
                     <div class="row">
                         <div class="col-sm-10 col-sm-offset-1 deal">
                             <div class="deal-img">
-                                <img src="resources/img/water.jpg" class="img-responsive" alt="">
+                                <img src="<?php bloginfo('stylesheet_directory') ?>/resources/img/water.jpg" class="img-responsive" alt="">
                             </div>
                             <div class="deal-content">
                                 <h4>U.K. Energy &amp; Water</h4>
@@ -151,7 +151,7 @@
                     <div class="row">
                         <div class="col-sm-10 col-sm-offset-1 deal">
                             <div class="deal-img">
-                                <img src="resources/img/WesthopeHeader.jpg" class="img-responsive" alt="">
+                                <img src="<?php bloginfo('stylesheet_directory') ?>/resources/img/WesthopeHeader.jpg" class="img-responsive" alt="">
                             </div>
                             <div class="deal-content">
                                 <h4>U.K. Nursing Home</h4>
@@ -169,7 +169,7 @@
                     <div class="row">
                         <div class="col-sm-10 col-sm-offset-1 deal">
                             <div class="deal-img">
-                                <img src="resources/img/asia_pacific.png" class="img-responsive" alt="">
+                                <img src="<?php bloginfo('stylesheet_directory') ?>/resources/img/asia_pacific.png" class="img-responsive" alt="">
                             </div>
                             <div class="deal-content">
                                 <h4>Asia Pacific Group</h4>
@@ -231,7 +231,7 @@
         <div class="row">
             <h2>Trending DealWire Event</h2>
             <div class="col-sm-6">
-                <img src="resources/img/nyc.jpg" alt="" class="img-responsive img-thumbnail event-img">
+                <img src="<?php bloginfo('stylesheet_directory') ?>/resources/img/nyc.jpg" alt="" class="img-responsive img-thumbnail event-img">
             </div>
             <div class="col-sm-6 event-content">
                 <h3>NYC Summer Venture Conference</h3>
