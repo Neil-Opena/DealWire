@@ -3044,9 +3044,9 @@ li{
 
 /*Hero*/
 #hero{
-   /* background: gray url('../img/hero.jpg') top left;*/
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0.8)), to(rgba(0,0,0,0.4))),url('../img/hero.jpg');
-    background-image: linear-gradient(rgba(255,255,255,0.8), rgba(0,0,0,0.4)),url('../img/hero.jpg');
+   /* background: gray url('resources/img/hero.jpg') top left;*/
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0.8)), to(rgba(0,0,0,0.4))),url('resources/img/hero.jpg');
+    background-image: linear-gradient(rgba(255,255,255,0.8), rgba(0,0,0,0.4)),url('resources/img/hero.jpg');
     background-size:cover;
     height:500px;
     background-attachment: fixed;
@@ -3185,7 +3185,7 @@ a .deal:hover{
 /*Services*/
 #services-section{
     padding:0;
-    background: white url('../img/business.jpg') no-repeat;
+    background: white url('resources/img/business.jpg') no-repeat;
     background-attachment: fixed;
     background-size: 1500px;
     border-top:3px solid rgba(14,45,74,0.8);
