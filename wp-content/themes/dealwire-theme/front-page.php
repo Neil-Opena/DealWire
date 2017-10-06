@@ -30,6 +30,7 @@
 	</article>
 <div class="clear"></div>
 </div> -->
+
 <section id="deals">
     <div class="container">
         <h2>Featured Deals</h2>
