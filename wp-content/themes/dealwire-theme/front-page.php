@@ -7,12 +7,12 @@
         </div>
     </div>
 </section>
-<!-- <div id="container">
-	<div id="site-description">
-		<h1><?php the_title(); ?></h1>
+<section id="deals">
+	<div class="container">
+		<h2>Featured Deals</h2>
+		<br>
 	</div>
-
-	<article id="content" class="fullwidth">
+	<article >
 		<?php the_post(); ?>
 		<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
@@ -28,9 +28,8 @@
 		</div>
 		<?php comments_template( '', true ); ?>
 	</article>
-<div class="clear"></div>
-</div> -->
-
+</section>
+<!--
 <section id="deals">
     <div class="container">
         <h2>Featured Deals</h2>
@@ -185,7 +184,7 @@
         </div>
     </div>
 </section>
-
+ -->
 
 <section id="about">
     <div class="container-fluid">
