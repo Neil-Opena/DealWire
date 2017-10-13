@@ -1,6 +1,4 @@
 <?php get_header(); ?>
-<h1>hi</h1>
-<h2>Hello</h2>
 <div id="container">
 	<div id="site-description">
 		<h1><?php the_title(); ?></h1>

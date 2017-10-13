@@ -52,6 +52,7 @@ Template Name: Project Grid (Page)
 		</div>
 	</div>
 	<?php } ?>
+	<h2>Hello</h2>
 	<div id="post-home" <?php post_class(); ?>>
 		<div id="content">
 		<h2 class="entry-title"><?php _e('Featured Projects', 'fivehundred'); ?></h2>

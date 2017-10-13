@@ -5,9 +5,9 @@ Template Name: Project Grid (Page)
 ?>
 <?php global $post; ?>
 <?php get_header(); ?>
-<?php
+<?php 
 	$settings = get_option('fivehundred_theme_settings');
-
+	
 	$display_count = $settings['home_projects'];
 	$num_projects = wp_count_posts('ignition_product');
 	$num_projects_pub = $num_projects->publish;
@@ -18,7 +18,7 @@ Template Name: Project Grid (Page)
 		$show_more = 0;
 	}
 	$url = site_url('/');
-	$tagline = get_bloginfo('description');
+	$tagline = get_bloginfo('description'); 
 	if ($settings) {
 		$twitter = $settings['twitter'];
 		$fb = $settings['fb'];
@@ -57,7 +57,7 @@ Template Name: Project Grid (Page)
 		<h2 class="entry-title"><?php _e('Featured Projects', 'fivehundred'); ?></h2>
 			<?php get_template_part( 'nav', 'above-grid' ); ?>
 			<div id="project-grid">
-				<?php
+				<?php 
 					get_template_part('loop', 'project');
 				?>
 			</div>

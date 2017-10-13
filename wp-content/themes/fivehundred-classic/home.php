@@ -4,7 +4,6 @@ Template Name: Blog Page
 */
 ?>
 <?php get_header(); ?>
-<h1>hi</h1>
 <div id="container" class="blog">
 	<div class="breakout-out blog-title">
 		<div class="breakout-in"><h2><?php the_title(); ?></h2></div>
