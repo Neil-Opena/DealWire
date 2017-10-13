@@ -6,14 +6,14 @@
 	</ul>
 	<div class="footerright">
 		<nav id="menu-footer">
-		
+
 			<?php
 			if ( has_nav_menu( 'footer-menu' ) ) {
 			// Using wp_nav_menu() to display menu
-			wp_nav_menu( array( 
+			wp_nav_menu( array(
 				'menu' => 'footer-menu', // Select the menu to show by Name
 				'container' => false, // Remove the navigation container div
-				'theme_location' => 'footer-menu' 
+				'theme_location' => 'footer-menu'
 				)
 			);
 			}
@@ -31,3 +31,4 @@
 <?php wp_footer(); ?>
 </body>
 </html>
+
