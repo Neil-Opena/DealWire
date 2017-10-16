@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row">
             <h1 class="hero-text"><span class="blue1">Deal</span><span class="blue2">Wire</span></h1>
-            <p class="lead">Where Deals Find Funds</p>
+            <p class="lead"><?php bloginfo('description') ?></p>
         </div>
     </div>
 </section>
