@@ -95,14 +95,6 @@
 	}
 
 	html, body {
-		background-color: #344660; /* Old browsers */
-		background: -moz-linear-gradient(left,  #344660 0%, #92e3fb 46%, #92e3fb 46%, #344660 100%); /* FF3.6+ */
-		background: -webkit-gradient(linear, left top, right top, color-stop(0%,#344660), color-stop(46%,#92e3fb), color-stop(46%,#92e3fb), color-stop(100%,#344660)); /* Chrome,Safari4+ */
-		background: -webkit-linear-gradient(left,  #344660 0%,#92e3fb 46%,#92e3fb 46%,#344660 100%); /* Chrome10+,Safari5.1+ */
-		background: -o-linear-gradient(left,  #344660 0%,#92e3fb 46%,#92e3fb 46%,#344660 100%); /* Opera 11.10+ */
-		background: -ms-linear-gradient(left,  #344660 0%,#92e3fb 46%,#92e3fb 46%,#344660 100%); /* IE10+ */
-		background: linear-gradient(to right,  #344660 0%,#92e3fb 46%,#92e3fb 46%,#344660 100%); /* W3C */
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#344660', endColorstr='#344660',GradientType=1 ); /* IE6-9 */
 		background-size: 100% 100px !important;
 		background-repeat: no-repeat !important;
 		line-height: 1.4em;
@@ -110,7 +102,6 @@
 
 	}
 	body {
-		padding-top: 12px;
 		-webkit-box-sizing: border-box;
   		-moz-box-sizing: border-box;
   		box-sizing: border-box;
@@ -322,10 +313,6 @@
 		width: 90%;
 		max-width: 960px;
 		margin: 0 auto;
-	}
-	nav#menu-footer {
-		float: right;
-		margin-top: 10px;
 	}
 
 	#about-us.entry-content {
@@ -2820,12 +2807,6 @@ a.comment-reply-link > span {
 			line-height: 1.1em;
 		}
 
-		nav#menu-footer {
-			float: none;
-			padding-top: 10px;
-			padding-bottom: 10px;
-		}
-
 	}
 
 	@media screen and (max-width: 320px) {
@@ -2924,11 +2905,6 @@ a.comment-reply-link > span {
 			text-align: center;
 		}
 
-		nav#menu-footer {
-			float: none;
-			margin-top: 0;
-			padding-top: 10px;
-		}
 
 		.home #content {
 			width: 90%;

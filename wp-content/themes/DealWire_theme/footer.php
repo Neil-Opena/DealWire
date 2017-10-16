@@ -1,6 +1,6 @@
 
 <footer>
-	<nav id="menu-footer">
+	<nav>
 
 		<?php
 		if ( has_nav_menu( 'footer-menu' ) ) {
