@@ -33,6 +33,10 @@ $register_section_title = get_field('register_section_title');
 $register_section_description = get_field('register_section_description');
 $register_section_button_text = get_field('register_section_button_text');
 $register_section_button_link = get_field('register_section_button_link');
+
+//Contact Section
+$contact_section_title = get_field('contact_section_title');
+$contact_section_text = get_field('contact_section_text');
  ?>
 
 
@@ -145,9 +149,8 @@ $register_section_button_link = get_field('register_section_button_link');
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-6 col-sm-offset-6 white-layer form-container">
-                <h2>Contact Us!</h2>
-                <p>Contact us now to learn more about how DealWire.co can help you. Simply fill out the form below or call us at <span class="number">(888)-944-4769</span>.</p>
-                <p>We are waiting to hear from you!</p>
+                <h2><?php echo $contact_section_title; ?></h2>
+                <p><?php echo $contact_section_text; ?></p>
                 <!-- <form method="post">
                     <div class="row">
                         <div class="col-sm-4">
