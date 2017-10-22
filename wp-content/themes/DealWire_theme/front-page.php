@@ -18,6 +18,14 @@ $service_three_title = get_field('service_three_title');
 $service_three_icon = get_field('service_three_icon');
 $service_three_description = get_field('service_three_description');
 
+//Trending Event Section
+$event_image = get_field('event_image');
+$event_title = get_field('event_title');
+$event_date = get_field('event_date');
+$event_description = get_field('event_description');
+$event_link = get_field('event_link');
+$event_button_text = get_field('event_button_text');
+
  ?>
 
 
@@ -97,15 +105,15 @@ $service_three_description = get_field('service_three_description');
         <div class="row">
             <h2>Trending DealWire Event</h2>
             <div class="col-sm-6">
-                <img src="<?php bloginfo('stylesheet_directory') ?>/resources/img/nyc.jpg" alt="" class="img-responsive img-thumbnail event-img">
+                <img src="<?php echo $event_image['url']; ?>" alt="<?php echo $event_image['alt']; ?>" class="img-responsive img-thumbnail event-img">
             </div>
             <div class="col-sm-6 event-content">
-                <h3>NYC Summer Venture Conference</h3>
-                <p>Date: August 3, 2017</p>
+                <h3><?php echo $event_title; ?></h3>
+                <p><?php echo $event_date; ?></p>
                 <p class="event-summary">
-                At this NYC Event, we will be showcasing a bunch of NEW Early-Stage VC Funds in the NYC area! The VC and Angel panels of early-stage investors will focus on How to meet investors, pitch them, and what it really takes ti get them to write you a check!
+                <?php echo $event_description; ?>
                 </p>
-                <a href="#" class="btn btn-lg btn-active">Learn More</a>
+                <a href="<?php echo $event_link; ?>" class="btn btn-lg btn-active"><?php echo $event_button_text; ?></a>
             </div>
         </div>
     </div>
