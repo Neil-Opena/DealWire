@@ -5,6 +5,7 @@
 $dealwire_section_title = get_field('dealwire_section_title');
 $dealwire_section_text = get_field('dealwire_section_text');
 $dealwire_section_button_text = get_field('dealwire_section_button_text');
+$dealwire_section_link = get_field('dealwire_section_link');
 
 //Our Services Section
 $services_section_title = get_field('services_section_title');
@@ -26,6 +27,12 @@ $event_description = get_field('event_description');
 $event_link = get_field('event_link');
 $event_button_text = get_field('event_button_text');
 
+
+//Register Now Section
+$register_section_title = get_field('register_section_title');
+$register_section_description = get_field('register_section_description');
+$register_section_button_text = get_field('register_section_button_text');
+$register_section_button_link = get_field('register_section_button_link');
  ?>
 
 
@@ -123,14 +130,12 @@ $event_button_text = get_field('event_button_text');
     <div class="container">
         <div class="row">
             <div class="col-sm-8 col-sm-offset-2 register-content purple">
-                <h2>Register Now!</h2>
-                <p class="lead">
-                    What are you waiting for?
+                <h2><?php echo $register_section_title; ?></h2>
+                <p>
+                <?php echo $register_section_description; ?>
                 </p>
-                <div class="register-justify">
-                <p>Register now and get the unique privileges of being a member of the grwoing community of investors here in Dealwire!</p>
-                </div>
-                <a href="#" class="btn btn-lg btn-active">Join Now!</a>
+
+                <a href="<?php echo $register_section_button_link; ?>" class="btn btn-lg btn-active"><?php echo $register_section_button_text; ?></a>
             </div>
         </div>
     </div>
