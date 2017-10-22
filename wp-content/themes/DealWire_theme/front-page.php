@@ -1,4 +1,16 @@
 <?php get_template_part('front-page-header'); ?>
+
+<?php
+//What is DealWire Section
+$dealwire_section_title = get_field('dealwire_section_title');
+$dealwire_section_text = get_field('dealwire_section_text');
+$dealwire_section_button_text = get_field('dealwire_section_button_text');
+
+
+
+ ?>
+
+
 <section id="hero" data-type="background" data-speed="3">
     <div class="container">
         <div class="row">
@@ -33,11 +45,12 @@
 <section id="about">
     <div class="container-fluid">
         <div class="row">
-            <h2>What is DealWire?</h2>
+            <h2><?php echo $dealwire_section_title; ?></h2>
             <div class="col-sm-8 col-sm-offset-2">
-                <p>DealWire.co is home to the internet&#039;s ONLY online boardroom where companies can access both high net worth and institutional investors.</p>
-                <p>Whether you're a company looking for growth opportunities or an investor looking for your next addition to your portfolio, register for free now to explore how DealWire.co can help!</p>
-                <a href="#" class="btn btn-lg btn-active">Join Now!</a>
+                <?php echo $dealwire_section_text; ?>
+				<div class="row">
+                	<a href="#" class="btn btn-lg btn-active"><?php echo $dealwire_section_button_text; ?></a>
+                </div>
             </div>
         </div>
     </div>
