@@ -6,7 +6,17 @@ $dealwire_section_title = get_field('dealwire_section_title');
 $dealwire_section_text = get_field('dealwire_section_text');
 $dealwire_section_button_text = get_field('dealwire_section_button_text');
 
-
+//Our Services Section
+$services_section_title = get_field('services_section_title');
+$service_one_title = get_field('service_one_title');
+$service_one_icon = get_field('service_one_icon');
+$service_one_description = get_field('service_one_description');
+$service_two_title = get_field('service_two_title');
+$service_two_icon = get_field('service_two_icon');
+$service_two_description = get_field('service_two_description');
+$service_three_title = get_field('service_three_title');
+$service_three_icon = get_field('service_three_icon');
+$service_three_description = get_field('service_three_description');
 
  ?>
 
@@ -61,21 +71,21 @@ $dealwire_section_button_text = get_field('dealwire_section_button_text');
     <div class="container">
         <div class="row">
             <div class="col-sm-6 white-layer">
-                <h2>Our Services</h2>
+                <h2><?php echo $services_section_title; ?></h2>
                 <div class="service">
-                    <i class="service-symbol fa fa-briefcase fa-2x" aria-hidden="true"></i>
-                    <h4>Deal Platform</h4>
-                    <p>Our private placement platform allows for a limited number of companies to pair up with private and institutional sources of captial to fund their next stage of growth. Investors can filter deals by type, location, stage (Seed, Series A, etc.), projected returns and more.</p>
+                    <i class="service-symbol fa <?php echo $service_one_icon; ?> fa-2x" aria-hidden="true"></i>
+                    <h4><?php echo $service_one_title; ?></h4>
+                    <p><?php echo $service_one_description; ?></p>
                 </div>
                 <div class="service">
-                    <i class="service-symbol fa fa-bullhorn fa-2x" aria-hidden="true"></i>
-                    <h4>Market Outreach</h4>
-                    <p>Whether you're a startup looking to "test the waters" or an established business looking to increase awareness, we provide a number of web-based digital marketing solutions to our subscripoton base of over 3 million accredited investors.</p>
+                    <i class="service-symbol fa <?php echo $service_two_icon; ?> fa-2x" aria-hidden="true"></i>
+                    <h4><?php echo $service_two_title; ?></h4>
+                    <p><?php echo $service_two_description; ?></p>
                 </div>
                 <div class="service">
-                    <i class="service-symbol fa fa-phone fa-2x" aria-hidden="true"></i>
-                    <h4>On Call Advisory</h4>
-                    <p>From questions regarding valuation to exploring the idea of going public, our "On Call" Advisory service provides entrepreneurs with 1-on-1 mentoring through experienced investment bankers, M&amp;A advisors and other financial professionals.</p>
+                    <i class="service-symbol fa <?php echo $service_three_icon; ?> fa-2x" aria-hidden="true"></i>
+                    <h4><?php echo $service_three_title; ?></h4>
+                    <p><?php echo $service_three_description; ?></p>
                 </div>
             </div>
         </div>
