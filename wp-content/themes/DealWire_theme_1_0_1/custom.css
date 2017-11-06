@@ -349,6 +349,7 @@ input[type="submit"]{
 footer{
     background:#333;
     margin:0;
+    padding:20px;
     color:#fff;
     text-align: center;
     font-size:70%;

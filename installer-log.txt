@@ -1,0 +1,296 @@
+********************************************************************************
+* DUPLICATOR-LITE: INSTALL-LOG
+* VERSION: 1.2.24
+* STEP-1 START @ 06:23:35
+* NOTICE: Do NOT post this data to public sites or forums
+********************************************************************************
+PHP VERSION:	5.6.31 | SAPI: apache2handler
+PHP TIME LIMIT:	[0] time limit restriction disabled
+PHP MEMORY:	2048M | SUHOSIN: disabled
+SERVER:		Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/5.6.31
+DOC ROOT:	D:/xampp/htdocs/DealWire
+DOC ROOT 755:	true
+LOG FILE 644:	false
+REQUEST URL:	http://localhost/DealWire/installer.php
+--------------------------------------
+ARCHIVE EXTRACTION
+--------------------------------------
+NAME:	11_4_dealwire_f3654c75a94e9e333364171104130819_archive.zip
+SIZE:	99.83MB
+ZIP:	Enabled (ZipArchive Support)
+
+>>> START EXTRACTION:
+ZipArchive Object
+(
+    [status] => 0
+    [statusSys] => 0
+    [numFiles] => 16361
+    [filename] => D:\xampp\htdocs\DealWire\11_4_dealwire_f3654c75a94e9e333364171104130819_archive.zip
+    [comment] => 
+)
+File timestamp is 'Current' mode: 2017-11-06 18:24:18
+<<< EXTRACTION COMPLETE: true
+
+WEB SERVER CONFIGURATION FILE RESET:
+- Backup of .htaccess/web.config made to *.171106182418.orig
+- Reset of .htaccess/web.config files
+
+STEP-1 COMPLETE @ 06:24:18 - RUNTIME: 42.7016 sec.
+
+
+********************************************************************************
+* DUPLICATOR-LITE: INSTALL-LOG
+* STEP-2 START @ 06:25:21
+* NOTICE: Do NOT post to public sites or forums
+********************************************************************************
+--------------------------------------
+DATABASE ENVIRONMENT
+--------------------------------------
+MYSQL VERSION:	This Server: 10.1.25 -- Build Server: 5.6.32
+FILE SIZE:	database.sql (10.05MB) - installer-data.sql (10.05MB)
+TIMEOUT:	5000
+MAXPACK:	1048576
+SQLMODE:	NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
+NEW SQL FILE:	[D:/xampp/htdocs/DealWire/installer-data.sql]
+--------------------------------------
+DATABASE RESULTS
+--------------------------------------
+ERRORS FOUND:	0
+TABLES DROPPED:	0
+QUERIES RAN:	7371
+
+wp_2d9wzh9mp4_commentmeta: (0)
+wp_2d9wzh9mp4_comments: (1)
+wp_2d9wzh9mp4_duplicator_packages: (5)
+wp_2d9wzh9mp4_ign_adaptive_pay_settings: (0)
+wp_2d9wzh9mp4_ign_aweber_settings: (0)
+wp_2d9wzh9mp4_ign_deck_settings: (2)
+wp_2d9wzh9mp4_ign_form: (0)
+wp_2d9wzh9mp4_ign_mailchimp_subscription: (0)
+wp_2d9wzh9mp4_ign_pay_info: (0)
+wp_2d9wzh9mp4_ign_pay_selection: (0)
+wp_2d9wzh9mp4_ign_pay_settings: (0)
+wp_2d9wzh9mp4_ign_prod_default_settings: (1)
+wp_2d9wzh9mp4_ign_product_settings: (0)
+wp_2d9wzh9mp4_ign_products: (6)
+wp_2d9wzh9mp4_ign_settings: (1)
+wp_2d9wzh9mp4_links: (0)
+wp_2d9wzh9mp4_mdid_assignments: (2)
+wp_2d9wzh9mp4_mdid_orders: (0)
+wp_2d9wzh9mp4_mdid_project_levels: (2)
+wp_2d9wzh9mp4_memberdeck_credits: (0)
+wp_2d9wzh9mp4_memberdeck_downloads: (0)
+wp_2d9wzh9mp4_memberdeck_key_assoc: (0)
+wp_2d9wzh9mp4_memberdeck_keys: (0)
+wp_2d9wzh9mp4_memberdeck_levels: (2)
+wp_2d9wzh9mp4_memberdeck_member_levels: (0)
+wp_2d9wzh9mp4_memberdeck_members: (0)
+wp_2d9wzh9mp4_memberdeck_order_meta: (0)
+wp_2d9wzh9mp4_memberdeck_orders: (0)
+wp_2d9wzh9mp4_memberdeck_preorder_tokens: (0)
+wp_2d9wzh9mp4_memberdeck_product_pathway: (0)
+wp_2d9wzh9mp4_memberdeck_sc_params: (0)
+wp_2d9wzh9mp4_memberdeck_subscriptions: (0)
+wp_2d9wzh9mp4_memberdeck_upgrade_pathways: (0)
+wp_2d9wzh9mp4_nf3_action_meta: (126)
+wp_2d9wzh9mp4_nf3_actions: (6)
+wp_2d9wzh9mp4_nf3_field_meta: (385)
+wp_2d9wzh9mp4_nf3_fields: (14)
+wp_2d9wzh9mp4_nf3_form_meta: (36)
+wp_2d9wzh9mp4_nf3_forms: (2)
+wp_2d9wzh9mp4_nf3_object_meta: (0)
+wp_2d9wzh9mp4_nf3_objects: (0)
+wp_2d9wzh9mp4_nf3_relationships: (0)
+wp_2d9wzh9mp4_options: (794)
+wp_2d9wzh9mp4_postmeta: (2889)
+wp_2d9wzh9mp4_posts: (433)
+wp_2d9wzh9mp4_term_relationships: (109)
+wp_2d9wzh9mp4_term_taxonomy: (223)
+wp_2d9wzh9mp4_termmeta: (0)
+wp_2d9wzh9mp4_terms: (223)
+wp_2d9wzh9mp4_um_conversations: (44)
+wp_2d9wzh9mp4_um_followers: (26)
+wp_2d9wzh9mp4_um_friends: (18)
+wp_2d9wzh9mp4_um_messages: (49)
+wp_2d9wzh9mp4_um_notifications: (229)
+wp_2d9wzh9mp4_usermeta: (1631)
+wp_2d9wzh9mp4_users: (53)
+
+Removed '151' cache/transient rows
+
+CREATE/INSTALL RUNTIME: 5.9783 sec.
+STEP-2 COMPLETE @ 06:25:27 - RUNTIME: 6.0408 sec.
+
+
+********************************************************************************
+* DUPLICATOR-LITE: INSTALL-LOG
+* STEP-3 START @ 06:25:34
+* NOTICE: Do NOT post to public sites or forums
+********************************************************************************
+CHARSET SERVER:	latin1
+CHARSET CLIENT:	utf8
+--------------------------------------
+SERIALIZER ENGINE
+[*] scan every column
+[~] scan only text columns
+[^] no searchable columns
+--------------------------------------
+wp_2d9wzh9mp4_commentmeta^ (0)
+wp_2d9wzh9mp4_comments~ (1)
+wp_2d9wzh9mp4_duplicator_packages^ (0)
+wp_2d9wzh9mp4_ign_adaptive_pay_settings^ (0)
+wp_2d9wzh9mp4_ign_aweber_settings^ (0)
+wp_2d9wzh9mp4_ign_deck_settings~ (2)
+wp_2d9wzh9mp4_ign_form^ (0)
+wp_2d9wzh9mp4_ign_mailchimp_subscription^ (0)
+wp_2d9wzh9mp4_ign_pay_info^ (0)
+wp_2d9wzh9mp4_ign_pay_selection^ (0)
+wp_2d9wzh9mp4_ign_pay_settings^ (0)
+wp_2d9wzh9mp4_ign_prod_default_settings~ (1)
+wp_2d9wzh9mp4_ign_product_settings^ (0)
+wp_2d9wzh9mp4_ign_products~ (6)
+wp_2d9wzh9mp4_ign_settings~ (1)
+wp_2d9wzh9mp4_links^ (0)
+wp_2d9wzh9mp4_mdid_assignments~ (2)
+wp_2d9wzh9mp4_mdid_orders^ (0)
+wp_2d9wzh9mp4_mdid_project_levels~ (2)
+wp_2d9wzh9mp4_memberdeck_credits^ (0)
+wp_2d9wzh9mp4_memberdeck_downloads^ (0)
+wp_2d9wzh9mp4_memberdeck_key_assoc^ (0)
+wp_2d9wzh9mp4_memberdeck_keys^ (0)
+wp_2d9wzh9mp4_memberdeck_levels~ (2)
+wp_2d9wzh9mp4_memberdeck_member_levels^ (0)
+wp_2d9wzh9mp4_memberdeck_members^ (0)
+wp_2d9wzh9mp4_memberdeck_order_meta^ (0)
+wp_2d9wzh9mp4_memberdeck_orders^ (0)
+wp_2d9wzh9mp4_memberdeck_preorder_tokens^ (0)
+wp_2d9wzh9mp4_memberdeck_product_pathway^ (0)
+wp_2d9wzh9mp4_memberdeck_sc_params^ (0)
+wp_2d9wzh9mp4_memberdeck_subscriptions^ (0)
+wp_2d9wzh9mp4_memberdeck_upgrade_pathways^ (0)
+wp_2d9wzh9mp4_nf3_action_meta~ (126)
+wp_2d9wzh9mp4_nf3_actions~ (6)
+wp_2d9wzh9mp4_nf3_field_meta~ (385)
+wp_2d9wzh9mp4_nf3_fields~ (14)
+wp_2d9wzh9mp4_nf3_form_meta~ (36)
+wp_2d9wzh9mp4_nf3_forms~ (2)
+wp_2d9wzh9mp4_nf3_object_meta^ (0)
+wp_2d9wzh9mp4_nf3_objects^ (0)
+wp_2d9wzh9mp4_nf3_relationships^ (0)
+wp_2d9wzh9mp4_options~ (645)
+wp_2d9wzh9mp4_postmeta~ (2889)
+wp_2d9wzh9mp4_posts~ (433)
+wp_2d9wzh9mp4_term_relationships~ (109)
+wp_2d9wzh9mp4_term_taxonomy~ (223)
+wp_2d9wzh9mp4_termmeta^ (0)
+wp_2d9wzh9mp4_terms~ (223)
+wp_2d9wzh9mp4_um_conversations~ (44)
+wp_2d9wzh9mp4_um_followers~ (26)
+wp_2d9wzh9mp4_um_friends~ (18)
+wp_2d9wzh9mp4_um_messages~ (49)
+wp_2d9wzh9mp4_um_notifications~ (229)
+wp_2d9wzh9mp4_usermeta~ (1631)
+wp_2d9wzh9mp4_users~ (53)
+--------------------------------------
+Search1:	'/home/content/a2pewpnas01_data05/92/3988692/html' 
+Change1:	'D:/xampp/htdocs/DealWire' 
+Search2:	'\/home\/content\/a2pewpnas01_data05\/92\/3988692\/html' 
+Change2:	'D:\/xampp\/htdocs\/DealWire' 
+Search3:	'%2Fhome%2Fcontent%2Fa2pewpnas01_data05%2F92%2F3988692%2Fhtml%2F' 
+Change3:	'D%3A%2Fxampp%2Fhtdocs%2FDealWire%2F' 
+Search4:	'\home\content\a2pewpnas01_data05\92\3988692\html' 
+Change4:	'D:/xampp/htdocs/DealWire' 
+Search5:	'//dealwire.co' 
+Change5:	'//localhost/DealWire' 
+Search6:	'\/\/dealwire.co' 
+Change6:	'\/\/localhost\/DealWire' 
+Search7:	'%2F%2Fdealwire.co' 
+Change7:	'%2F%2Flocalhost%2FDealWire' 
+SCANNED:	Tables:56 	|	 Rows:7158 	|	 Cells:38734 
+UPDATED:	Tables:2 	|	 Rows:742 	|	 Cells:1110 
+ERRORS:		53 
+RUNTIME:	1.826500 sec
+--------------------------------------
+DATA-REPLACE ERRORS (Serialization):
+SELECT option_value FROM `wp_2d9wzh9mp4_options`  WHERE option_id = "163";
+SELECT meta_value FROM `wp_2d9wzh9mp4_postmeta`  WHERE meta_id = "309";
+SELECT meta_value FROM `wp_2d9wzh9mp4_postmeta`  WHERE meta_id = "380";
+SELECT meta_value FROM `wp_2d9wzh9mp4_postmeta`  WHERE meta_id = "1170";
+SELECT meta_value FROM `wp_2d9wzh9mp4_postmeta`  WHERE meta_id = "786";
+SELECT meta_value FROM `wp_2d9wzh9mp4_postmeta`  WHERE meta_id = "772";
+SELECT meta_value FROM `wp_2d9wzh9mp4_postmeta`  WHERE meta_id = "2868";
+SELECT meta_value FROM `wp_2d9wzh9mp4_postmeta`  WHERE meta_id = "1756";
+SELECT meta_value FROM `wp_2d9wzh9mp4_postmeta`  WHERE meta_id = "1377";
+SELECT meta_value FROM `wp_2d9wzh9mp4_postmeta`  WHERE meta_id = "801";
+SELECT meta_value FROM `wp_2d9wzh9mp4_postmeta`  WHERE meta_id = "803";
+SELECT meta_value FROM `wp_2d9wzh9mp4_postmeta`  WHERE meta_id = "2255";
+SELECT meta_value FROM `wp_2d9wzh9mp4_postmeta`  WHERE meta_id = "2250";
+SELECT meta_value FROM `wp_2d9wzh9mp4_postmeta`  WHERE meta_id = "1394";
+SELECT meta_value FROM `wp_2d9wzh9mp4_postmeta`  WHERE meta_id = "1464";
+SELECT meta_value FROM `wp_2d9wzh9mp4_postmeta`  WHERE meta_id = "1744";
+SELECT meta_value FROM `wp_2d9wzh9mp4_postmeta`  WHERE meta_id = "1825";
+SELECT meta_value FROM `wp_2d9wzh9mp4_postmeta`  WHERE meta_id = "1850";
+SELECT meta_value FROM `wp_2d9wzh9mp4_postmeta`  WHERE meta_id = "1917";
+SELECT meta_value FROM `wp_2d9wzh9mp4_postmeta`  WHERE meta_id = "2156";
+SELECT meta_value FROM `wp_2d9wzh9mp4_postmeta`  WHERE meta_id = "3553";
+SELECT meta_value FROM `wp_2d9wzh9mp4_postmeta`  WHERE meta_id = "2659";
+SELECT meta_value FROM `wp_2d9wzh9mp4_postmeta`  WHERE meta_id = "2257";
+SELECT meta_value FROM `wp_2d9wzh9mp4_postmeta`  WHERE meta_id = "2265";
+SELECT meta_value FROM `wp_2d9wzh9mp4_postmeta`  WHERE meta_id = "2267";
+SELECT meta_value FROM `wp_2d9wzh9mp4_postmeta`  WHERE meta_id = "2269";
+SELECT meta_value FROM `wp_2d9wzh9mp4_postmeta`  WHERE meta_id = "2271";
+SELECT meta_value FROM `wp_2d9wzh9mp4_postmeta`  WHERE meta_id = "2870";
+SELECT meta_value FROM `wp_2d9wzh9mp4_postmeta`  WHERE meta_id = "2886";
+SELECT meta_value FROM `wp_2d9wzh9mp4_postmeta`  WHERE meta_id = "3077";
+SELECT meta_value FROM `wp_2d9wzh9mp4_postmeta`  WHERE meta_id = "2904";
+SELECT meta_value FROM `wp_2d9wzh9mp4_postmeta`  WHERE meta_id = "2906";
+SELECT meta_value FROM `wp_2d9wzh9mp4_postmeta`  WHERE meta_id = "2909";
+SELECT meta_value FROM `wp_2d9wzh9mp4_postmeta`  WHERE meta_id = "3009";
+SELECT meta_value FROM `wp_2d9wzh9mp4_postmeta`  WHERE meta_id = "3024";
+SELECT meta_value FROM `wp_2d9wzh9mp4_postmeta`  WHERE meta_id = "3026";
+SELECT meta_value FROM `wp_2d9wzh9mp4_postmeta`  WHERE meta_id = "3070";
+SELECT meta_value FROM `wp_2d9wzh9mp4_postmeta`  WHERE meta_id = "3075";
+SELECT meta_value FROM `wp_2d9wzh9mp4_postmeta`  WHERE meta_id = "3079";
+SELECT meta_value FROM `wp_2d9wzh9mp4_postmeta`  WHERE meta_id = "3082";
+SELECT meta_value FROM `wp_2d9wzh9mp4_postmeta`  WHERE meta_id = "3084";
+SELECT meta_value FROM `wp_2d9wzh9mp4_postmeta`  WHERE meta_id = "3086";
+SELECT meta_value FROM `wp_2d9wzh9mp4_postmeta`  WHERE meta_id = "3663";
+SELECT meta_value FROM `wp_2d9wzh9mp4_postmeta`  WHERE meta_id = "3088";
+SELECT meta_value FROM `wp_2d9wzh9mp4_postmeta`  WHERE meta_id = "3348";
+SELECT meta_value FROM `wp_2d9wzh9mp4_postmeta`  WHERE meta_id = "3378";
+SELECT meta_value FROM `wp_2d9wzh9mp4_postmeta`  WHERE meta_id = "3410";
+SELECT meta_value FROM `wp_2d9wzh9mp4_postmeta`  WHERE meta_id = "3419";
+SELECT meta_value FROM `wp_2d9wzh9mp4_postmeta`  WHERE meta_id = "3421";
+SELECT meta_value FROM `wp_2d9wzh9mp4_postmeta`  WHERE meta_id = "3462";
+SELECT meta_value FROM `wp_2d9wzh9mp4_postmeta`  WHERE meta_id = "3661";
+SELECT meta_value FROM `wp_2d9wzh9mp4_postmeta`  WHERE meta_id = "3722";
+SELECT meta_value FROM `wp_2d9wzh9mp4_postmeta`  WHERE meta_id = "4083";
+
+
+====================================
+CONFIGURATION FILE UPDATES:
+====================================
+
+UPDATED WP-CONFIG: /wp-config.php' (if present)
+
+WEB SERVER CONFIGURATION FILE BASIC SETUP:
+- Preparing .htaccess file with basic setup.
+Basic .htaccess file edit complete.  If using IIS web.config this process will need to be done manually.
+
+====================================
+GENERAL UPDATES & CLEANUP:
+====================================
+
+- Created directory wp-snapshots
+- Created file wp-snapshots/index.php
+
+====================================
+NOTICES
+====================================
+
+NOTICE: The media settings values in the table 'wp_2d9wzh9mp4_options' has at least one the following values ['upload_url_path','upload_path'] set. 
+Please validate these settings by logging into your wp-admin and going to Settings->Media area and validating the 'Uploading Files' section
+
+STEP 3 COMPLETE @ 06:25:36 - RUNTIME: 2.0188 sec.
+
+
